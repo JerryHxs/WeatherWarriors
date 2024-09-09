@@ -1,0 +1,244 @@
+/* About.css */
+.about-page {
+  padding: 2rem;
+  background-color: #f0f8ff;
+  color: #333;
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #e74c3c;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.close-button:hover {
+  background-color: #c0392b;
+}
+
+.group-name {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.member-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem;
+  width: calc(33.333% - 2rem);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+}
+
+.member-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3498db;
+}
+
+.project-stats, .project-links, .data-sources {
+  margin-top: 2rem;
+}
+
+.stat-box {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 1.5rem;
+  color: #3498db;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.link-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+  background-color: #2980b9;
+}
+
+.mission-statement {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.mission-statement h2 {
+  color: #3498db;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.mission-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+
+/* About.css */
+@media (max-width: 768px) {
+  .about-page {
+    padding: 1rem;
+    max-width: 95%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .group-name {
+    font-size: 1.8rem;
+  }
+
+  .member-card {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .member-image {
+    width: 80px;  /* 80% smaller */
+    height: 80px;
+  }
+
+  .member-name {
+    font-size: 1rem;
+  }
+
+  .member-bio, .member-responsibility {
+    font-size: 0.8rem;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  .stat h3 {
+    font-size: 1rem;
+  }
+
+  .stat p {
+    font-size: 0.8rem;
+  }
+
+  .button-container {
+    justify-content: center;
+  }
+
+  .link-button {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .data-description, .mission-content p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .about-page {
+    padding: 1rem;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  .team-members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .member-card {
+    width: 100%;
+    height: calc(66vh - 2rem); /* 2/3 of screen height minus some padding */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .member-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .member-name {
+    font-size: 1rem;
+  }
+
+  .member-bio, .member-responsibility {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 769px) {
+   .project-links, .data-sources {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-stats {
+    align-items: center;
+    text-align: center;
+  }
+
+   .button-container {
+    justify-content: center;
+  }
+
+  .data-description {
+    max-width: 80%;
+    margin: 1rem auto;
+  }
+}

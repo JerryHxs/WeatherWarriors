@@ -1,0 +1,17 @@
+<html>
+	<head> </head>
+	<body>
+        <h1>Alerts</h1>
+		{% if alerts == [] %}
+			<p>No alerts for the given city</p>	
+		{% else %}
+            {% for i in alerts %}
+            <div></div>
+                <p>{{i[0]}}</p>
+                <p>{{i[1]}}</p>
+                <br/>
+            </div>
+            {% endfor %}
+        {% endif %}
+    </body>
+</html>

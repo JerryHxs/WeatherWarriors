@@ -1,0 +1,20 @@
+<html>
+	<head> </head>
+	<body>
+        <h1>One day</h1>
+		{% if city == [] %}
+			<p>Not a valid city</p>	
+		{% else %}
+            {% for i in weather %}
+                <p>{{i[0]}}</p>
+                <p>{{i[1]}}</p>
+                <p>{{i[2]}}</p>
+                <p>{{i[3]}}</p>
+                <p>{{i[4]}}</p>
+                <p>{{i[5]}}</p>
+                <p>{{i[6]}}</p>
+                <br/>
+            {% endfor &%}
+        {% endif %}
+    </body>
+</html>

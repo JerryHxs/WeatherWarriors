@@ -1,0 +1,12 @@
+<html>
+	<head> </head>
+	<body>
+        <h1>Weather</h1>
+		{% if weather == [] %}
+			<p>Not a valid city</p>	
+		{% else %}
+            <p>{{weather[0]}}</p>
+            <br/>
+        {% endif %}
+    </body>
+</html>

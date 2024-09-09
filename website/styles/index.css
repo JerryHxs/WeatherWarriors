@@ -1,0 +1,40 @@
+/* index.css
+Contains styles used exclusively in index.html,
+such as the responsive sidebar layout.
+*/
+
+#sidebar-left {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 20px;
+    width: 280px;
+    height: 100%;
+    
+
+    background: grey;
+}
+
+#sidebar-right {
+    position: absolute;
+    top: 0;
+    left: 320px;
+    margin: 0;
+    padding: 0;
+    width: calc(100% - 340px);
+    height: 100%;
+    
+    background: cyan;
+}
+
+#location-finder {
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 250px);
+    width: 500px;
+    height: 300px;
+    padding: 24px;
+    background: white;
+    border: 1px solid grey;
+}

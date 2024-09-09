@@ -1,0 +1,60 @@
+/* WeatherCard.css */
+
+.weather-card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .weather-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .weather-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .weather-icon {
+    width: 64px;
+    height: 64px;
+  }
+  
+  .info-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  .weather-title {
+    color: #3498db;
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  
+  .weather-info {
+    color: #34495e;
+  }
+  
+  .condition {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .temperature, .precipitation {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  strong {
+    color: #2980b9;
+  }

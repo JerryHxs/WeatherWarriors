@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- STYLESHEETS -->
+     <link rel="stylesheet" href="styles/style.css">
+     <link rel="stylesheet" href="styles/index.css">
+</head>
+<body style="margin: 0; padding: 0; background: green;">
+    
+    <div id="sidebar-left">
+        <div>
+            <p><b>Saved Locations</b></p>
+            <ul>
+                <li>Location 1</li>
+                <li>Location 2</li>
+                <li>Location 3</li>
+            </ul>
+            <button onclick="openLocationFinder()">+ Add A Location</button>
+        </div>
+    </div>
+
+    <div id="sidebar-right">
+        <p>sidebar-right</p>
+    </div>
+
+    <div id="location-finder" style="visibility: hidden;">
+        <button onclick="closeLocationFinder()">X (Close)</button>
+        <p><b>Find a Location</b></p>
+        <input type="text" placeholder="Enter the name of a city.">
+    </div>
+
+    <!-- SCRIPTS -->
+     <!-- The main script for this page, handles retrieving info like city data
+      using Postman and fetch requests. -->
+      <script src="scripts/location-search.js"></script>
+     <script src="scripts/index.js"></script>
+</body>
+</html>

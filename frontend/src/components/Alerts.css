@@ -1,0 +1,70 @@
+.alerts-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.alert-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.alert-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+}
+
+.alert-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #e74c3c;
+}
+
+.alert-description {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.no-alerts .alert-title {
+  color: #2ecc71;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* You may want to add these styles to your global CSS file if not already present */
+.weather-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.weather-nav-button {
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.weather-nav-button:hover {
+  background-color: #2980b9;
+}
+
+.weather-nav-button.active {
+  background-color: #2c3e50;
+}
